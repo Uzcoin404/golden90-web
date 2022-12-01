@@ -1,4 +1,186 @@
-* {
+body {
+    background-color: #000d0b;
+    font-family: "Inter", sans-serif;
+}
+.form-select:focus {
+    box-shadow: none !important;
+}
+.btn {
+    --bs-btn-box-shadow: none;
+    --bs-btn-focus-box-shadow: none;
+}
+:root {
+    --primary: #099c6d;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    --bs-navbar-color: #fff;
+    --bs-navbar-hover-color: #ddd;
+    --bs-navbar-disabled-color: #bbb;
+    --bs-navbar-active-color: #ddd;
+}
+.desktop__nav .navbar-nav {
+    column-gap: 36px;
+    align-items: center;
+}
+.desktop__nav .container-fluid {
+    max-width: 1920px;
+}
+.mobile__nav {
+    display: none;
+}
+.nav-link {
+    text-transform: uppercase;
+    font-size: 12px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+.nav-link img {
+    margin-right: 8px;
+}
+.nav__select option {
+    text-transform: uppercase;
+}
+.nav__actions {
+    display: flex;
+    align-items: center;
+}
+.nav__btn {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--primary);
+    --bs-btn-border-color: var(--primary);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--primary);
+    --bs-btn-active-border-color: var(--primary);
+    --bs-btn-hover-border-color: var(--primary);
+    --bs-btn-hover-color: var(--primary);
+    white-space: nowrap;
+    height: 41px;
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.login__btn {
+    --bs-btn-bg: rgba(255, 255, 255, 0.3);
+    --bs-btn-border-color: #ffffff4d;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgba(255, 255, 255, 0.3);
+    --bs-btn-active-border-color: #ffffff4d;
+    --bs-btn-hover-border-color: #ffffff4d;
+    --bs-btn-hover-color: #fff;
+}
+
+/* Hero */
+
+.hero,
+.hero__carousel {
+    height: 782px;
+}
+.splide__arrow {
+    background: none;
+    width: 44px;
+    height: 60px;
+}
+.splide__arrow svg {
+    width: inherit;
+    height: inherit;
+}
+.splide__arrow--prev {
+    left: 200px;
+}
+.splide__arrow--next {
+    right: 200px;
+}
+.splide__track,
+.hero__slide {
+    height: 100%;
+}
+.hero__slide {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../img/hero-slide-1.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.hero_slide_blog {
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+}
+.hero_slide_btn {
+    background: radial-gradient(50% 50% at 50% 50%, #5fe65c 0%, #099c6d 100%);
+    border-radius: 50%;
+    border: none !important;
+    max-width: 600px;
+    width: 100%;
+    height: 76px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #fff !important;
+    transition: 0.3s;
+}
+.hero_slide_btn:hover {
+    box-shadow: 0px 0px 46.5579px #00ff38;
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
     margin: 0;
-    padding: 0;
+}
+.section_title_blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.all_games_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: center;
+}
+.allgames_box_title{
+    font-size: 12px;
+    margin: 0;
+    margin-top: -10px;
+}
+.allgames_img_blog{
+    max-width: 132px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all_games_box img{
+    width: max-content;
+    pointer-events: none;
+}
+
+.games__card{
+    height: 380px;
+    background: url('../img/card-bg-1.jpg');
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+.games__card .hero_slide_btn{
+    width: 200px;
+    height: 48px;
+    align-self: flex-end;
+    font-size: 16px;
 }
