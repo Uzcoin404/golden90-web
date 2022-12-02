@@ -12,6 +12,9 @@ body {
 :root {
     --primary: #099c6d;
 }
+a:hover{
+    color: inherit;
+}
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.75);
@@ -26,17 +29,35 @@ body {
     align-items: center;
 }
 .bottom__navbar{
-    background-color: rgba(9, 156, 110, 0.75);
-    height: 98px;
-    padding-top: auto;
+    background-color: rgba(9, 156, 110, 0.8);
+    padding: 0;
+}
+.bottom_nav_content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.bottom_nav_item{
+    display: flex;
+    align-items: center;
 }
 .navbar .container-fluid {
     max-width: 1920px;
 }
 .bottom_nav_btn{
+    display: flex;
+    align-items: center;
     height: 98px;
     padding: 0 30px;
-
+    color: #fff !important;
+    text-decoration: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+.bottom_nav_btn:last-child{
+    border: none;
+}
+.bottom_nav_btn img{
+    margin-right: 12px;
 }
 .mobile__nav {
     display: none;
