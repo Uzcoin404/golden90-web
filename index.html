@@ -17,67 +17,160 @@
 
 <body>
 
-    <header class="header">
-        <nav class="navbar desktop__nav navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="img/icon/logo.png" alt=""></a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <img src="img/icon/spor.svg" alt="" class="nav-item-logo">
-                            SPOR
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <img src="img/icon/play.svg" alt="" class="nav-item-logo">
-                            Canli
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <img src="img/icon/casino.svg" alt="" class="nav-item-logo">
-                            CASINO
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <img src="img/icon/canli-casino.svg" alt="" class="nav-item-logo">
-                            CANLI CASINO
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <img src="img/icon/gamepad.svg" alt="" class="nav-item-logo">
-                            SANAL SPORLAR
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <img src="img/icon/betzone.svg" alt="" class="nav-item-logo">
-                            BETZONE
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <img src="img/icon/gift-box.svg" alt="" class="nav-item-logo">
-                            PROMOSYONLAR
-                        </a>
-                    </li>
-                </ul>
-                <div class="nav__actions">
-                    <select class="form-select nav__select" name="language" title="select language">
-                        <option value="tr">
-                            <img src="img/icon/tr.svg" alt="">
-                        </option>
-                        <option value="tr">Us</option>
-                        <option value="tr">Ru</option>
-                    </select>
-                    <a href="#" class="btn nav__btn px-4 mx-1">ÜYE OL</a>
-                    <a href="#" class="btn nav__btn login__btn px-3">GİRİŞ</a>
-                </div>
+    <div class="header__warning">
+        <p>Pokerklas güncel domaini www.pokerklas431.com'dur ve bir sonraki domain <a href="#">www.pokerklas431.com</a>
+            olacaktır</p>
+        <button class="btn-close" type="button" id="header_warn_close"></button>
+    </div>
+    <nav class="navbar navbar-expand-xxl desktop__nav sticky-top">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center gap-md-3">
+                <button class="btn nav_mobile_btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarDrawer" aria-controls="navbarDrawer">
+                    <img src="img/icon/menu.svg" alt="">
+                    <span>Menu</span>
+                </button>
+                <a href="#" class="btn nav_mobile_btn">
+                    <img src="img/icon/stopwatch.svg" alt="">
+                    <span>Canlı Bahis</span>
+                </a>
             </div>
-        </nav>
+            <a class="navbar-brand" href="/"><img src="img/icon/logo.png" alt=""></a>
+            <ul class="navbar-nav d-xxl-flex d-none">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/spor.svg" alt="" class="nav-item-logo">
+                        SPOR
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/play.svg" alt="" class="nav-item-logo">
+                        Canli
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/casino.svg" alt="" class="nav-item-logo">
+                        CASINO
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/canli-casino.svg" alt="" class="nav-item-logo">
+                        CANLI CASINO
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/gamepad.svg" alt="" class="nav-item-logo">
+                        SANAL SPORLAR
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/betzone.svg" alt="" class="nav-item-logo">
+                        BETZONE
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/gift-box.svg" alt="" class="nav-item-logo">
+                        PROMOSYONLAR
+                    </a>
+                </li>
+            </ul>
+            <div class="nav__actions d-xxl-flex d-none">
+                <select class="form-select nav__select" name="language" title="select language">
+                    <option value="tr">
+                        <img src="img/icon/tr.svg" alt="">
+                    </option>
+                    <option value="tr">Us</option>
+                    <option value="tr">Ru</option>
+                </select>
+                <a href="#" class="btn nav__btn px-4 mx-1">ÜYE OL</a>
+                <a href="#" class="btn nav__btn login__btn px-3">GİRİŞ</a>
+            </div>
+            <div class="d-flex align-items-center gap-md-3">
+                <a href="#" class="btn nav_mobile_btn">
+                    <img src="img/icon/user.svg" alt="">
+                    <span>Üye ol</span>
+                </a>
+                <a href="#" class="btn nav_mobile_btn">
+                    <img src="img/icon/share.svg" alt="">
+                    <span>Giriş</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="navbarDrawer"
+        aria-labelledby="navbarDrawerLabel">
+        <div class="offcanvas-header">
+            <a class="navbar-brand" href="/"><img src="img/icon/logo.png" alt=""></a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/spor.svg" alt="" class="nav-item-logo">
+                        SPOR
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/play.svg" alt="" class="nav-item-logo">
+                        Canli
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/casino.svg" alt="" class="nav-item-logo">
+                        CASINO
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/canli-casino.svg" alt="" class="nav-item-logo">
+                        CANLI CASINO
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/gamepad.svg" alt="" class="nav-item-logo">
+                        SANAL SPORLAR
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/betzone.svg" alt="" class="nav-item-logo">
+                        BETZONE
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="img/icon/gift-box.svg" alt="" class="nav-item-logo">
+                        PROMOSYONLAR
+                    </a>
+                </li>
+            </ul>
+            <div class="nav__actions">
+                <select class="form-select nav__select" name="language" title="select language">
+                    <option value="tr">
+                        <img src="img/icon/tr.svg" alt="">
+                    </option>
+                    <option value="tr">Us</option>
+                    <option value="tr">Ru</option>
+                </select>
+                <a href="#" class="btn nav__btn px-4 mx-1">ÜYE OL</a>
+                <a href="#" class="btn nav__btn login__btn px-3">GİRİŞ</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
         <nav class="navbar bottom__navbar fixed-bottom">
             <div class="container-fluid">
                 <div class="bottom_nav_content">
@@ -133,13 +226,13 @@
                     <button class="splide__arrow splide__arrow--prev" type="button">
                         <svg width="44" height="60" viewBox="0 0 44 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.25634 6.92285L30.5353 30.2018L7.25634 53.4807" stroke="#099C6D"
-                                stroke-width="18.1058" />
+                                stroke-width="18" />
                         </svg>
                     </button>
                     <button class="splide__arrow splide__arrow--next" type="button">
                         <svg width="44" height="60" viewBox="0 0 44 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.25634 6.92285L30.5353 30.2018L7.25634 53.4807" stroke="#099C6D"
-                                stroke-width="18.1058" />
+                                stroke-width="18" />
                         </svg>
                     </button>
                 </div>
@@ -148,47 +241,69 @@
     </header>
     <main class="main">
         <section class="all__games">
-            <div class="container">
-                <div class="section_title_blog pt-4">
+            <div class="container-lg">
+                <div class="section_title_blog pt-4 d-lg-flex d-none">
                     <img src="img/icon/fifa-ball.svg" alt="">
                     <h3 class="section__title ms-3">TUM OYUNLAR</h3>
                 </div>
-                <div class="row mt-4 pt-md-4 mb-3 pb-md-3">
-                    <div class="col all_games_box">
-                        <div class="allgames_img_blog"><img src="img/football.png" alt=""></div>
-                        <h5 class="allgames_box_title fw-bold text-white">Football</h5>
-                    </div>
-                    <div class="col all_games_box">
-                        <div class="allgames_img_blog"><img src="img/basketball.png" alt=""></div>
-                        <h5 class="allgames_box_title fw-bold text-white">Basketball</h5>
-                    </div>
-                    <div class="col all_games_box">
-                        <div class="allgames_img_blog"><img src="img/volleyball.png" alt=""></div>
-                        <h5 class="allgames_box_title fw-bold text-white">Volleyball</h5>
-                    </div>
-                    <div class="col all_games_box">
-                        <div class="allgames_img_blog"><img src="img/futsal.png" alt=""></div>
-                        <h5 class="allgames_box_title fw-bold text-white">Futsal</h5>
-                    </div>
-                    <div class="col all_games_box">
-                        <div class="allgames_img_blog"><img src="img/tennis.png" alt=""></div>
-                        <h5 class="allgames_box_title fw-bold text-white">Tennis</h5>
-                    </div>
-                    <div class="col all_games_box">
-                        <div class="allgames_img_blog"><img src="img/rugby.png" alt=""></div>
-                        <h5 class="allgames_box_title fw-bold text-white">Rugby</h5>
-                    </div>
-                    <div class="col all_games_box">
-                        <div class="allgames_img_blog"><img src="img/table-tennis.png" alt=""></div>
-                        <h5 class="allgames_box_title fw-bold text-white">Table Tennis</h5>
-                    </div>
-                    <div class="col all_games_box">
-                        <div class="allgames_img_blog"><img src="img/all-sport.png" alt=""></div>
-                        <h5 class="allgames_box_title fw-bold text-white">All games</h5>
+                <div class="row mt-4 pt-lg-4 mb-3 pb-lg-3">
+                    <div class="splide games_box_slide" role="group">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <a href="#" class="col all_games_box">
+                                        <div class="allgames_img_blog"><img src="img/football.png" alt=""></div>
+                                        <h5 class="allgames_box_title fw-bold text-white">Football</h5>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#" class="col all_games_box">
+                                        <div class="allgames_img_blog"><img src="img/basketball.png" alt=""></div>
+                                        <h5 class="allgames_box_title fw-bold text-white">Basketball</h5>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#" class="col all_games_box">
+                                        <div class="allgames_img_blog"><img src="img/volleyball.png" alt=""></div>
+                                        <h5 class="allgames_box_title fw-bold text-white">Volleyball</h5>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#" class="col all_games_box">
+                                        <div class="allgames_img_blog"><img src="img/futsal.png" alt=""></div>
+                                        <h5 class="allgames_box_title fw-bold text-white">Futsal</h5>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#" class="col all_games_box">
+                                        <div class="allgames_img_blog"><img src="img/tennis.png" alt=""></div>
+                                        <h5 class="allgames_box_title fw-bold text-white">Tennis</h5>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#" class="col all_games_box">
+                                        <div class="allgames_img_blog"><img src="img/rugby.png" alt=""></div>
+                                        <h5 class="allgames_box_title fw-bold text-white">Rugby</h5>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#" class="col all_games_box">
+                                        <div class="allgames_img_blog"><img src="img/table-tennis.png" alt=""></div>
+                                        <h5 class="allgames_box_title fw-bold text-white">Table Tennis</h5>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="#" class="col all_games_box">
+                                        <div class="allgames_img_blog"><img src="img/all-sport.png" alt=""></div>
+                                        <h5 class="allgames_box_title fw-bold text-white">All games</h5>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="row mt-3 mb-4 pb-md-4">
-                    <div class="col-6 allgames__cards">
+                <div class="row mt-3 mb-4 pb-md-4 gy-4">
+                    <div class="col-lg-6 allgames__cards d-lg-block d-none">
                         <div class="games__card">
                             <div class="games_card_content">
                                 <img src="img/card-text-1.png" alt="">
@@ -196,7 +311,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 allgames__cards">
+                    <div class="col-lg-6 allgames__cards px-lg-3 px-0">
                         <div class="games__card">
                             <div class="games_card_content">
                                 <img src="img/card-text-2.png" alt="">
@@ -255,6 +370,16 @@
                     </div>
                     <div class="slot__images col col-xl-2 col-md-3">
                         <img src="img/slot/slot(17).png" alt="" class="slot__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="col-lg-6 allgames__cards d-lg-none d-block mb-4">
+                <div class="games__card">
+                    <div class="games_card_content">
+                        <img src="img/card-text-1.png" alt="">
+                        <a href="#" class="btn hero_slide_btn">DETAYLAR</a>
                     </div>
                 </div>
             </div>
