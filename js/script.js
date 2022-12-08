@@ -1,7 +1,7 @@
 new Splide(".splide", {
     type: "loop",
     pagination: false,
-    autoplay: true
+    // autoplay: true
 }).mount();
 new Splide(".games_box_slide", {
     type: 'loop',
@@ -13,6 +13,9 @@ new Splide(".games_box_slide", {
     breakpoints: {
 		992: {
 			perPage: 6,
+		},
+		575: {
+			perPage: 4,
 		},
   }
 }).mount();

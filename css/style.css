@@ -62,6 +62,9 @@ a:hover {
 .mobile__nav {
     display: none;
 }
+.offcanvas .nav-item{
+    margin-bottom: 10px;
+}
 .nav-link {
     text-transform: uppercase;
     font-size: 12px;
@@ -72,9 +75,21 @@ a:hover {
 .nav-link img {
     margin-right: 8px;
 }
-.nav__select option {
+.nav__select {
     text-transform: uppercase;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    border-color: #fff;
+    color: #fff;
+    font-size: 11px;
+    height: 41px;
+    max-width: 100px;
 }
+.nav__select option{
+    color: #000d0b;
+    font-size: 16px;
+}
+
 .nav__actions {
     display: flex;
     align-items: center;
@@ -107,9 +122,10 @@ a:hover {
 
 /* Hero */
 
-.hero,
-.hero__carousel {
-    height: 782px;
+.hero__carousel .splide__slide {
+    height: 90vh;
+    min-height: 780px;
+    max-height: 780px;
 }
 .splide__arrow {
     background: none;
@@ -138,10 +154,10 @@ a:hover {
     background-repeat: no-repeat;
 }
 .hero_slide_blog {
-    padding-top: 160px;
     padding-right: 15%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .hero_slide_btn {
     background: radial-gradient(50% 50% at 50% 50%, #5fe65c 0%, #099c6d 100%);
@@ -180,7 +196,7 @@ a:hover {
     width: 100%;
     margin: 0 auto;
 }
-.games_box_slide .splide__slide{
+.games_box_slide .splide__slide {
     display: flex;
 }
 .all_games_box {
@@ -269,11 +285,12 @@ a:hover {
         url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e")
         center/1em auto no-repeat;
 }
-.header__warning p, a {
+.header__warning p,
+a {
     color: #fff !important;
     margin: 0;
 }
-.nav_mobile_btn{
+.nav_mobile_btn {
     --bs-btn-color: #fff;
     --bs-btn-hover-color: #fff;
     --bs-btn-active-color: #fff;
@@ -282,35 +299,106 @@ a:hover {
     align-items: center;
     font-size: 11px;
 }
-.nav_mobile_btn img{
+.nav_mobile_btn img {
     margin-bottom: 8px;
 }
 @media (min-width: 1400px) {
     .slot__images {
         width: 14.285714285%;
     }
-    .nav_mobile_btn{
+    .nav_mobile_btn {
         display: none;
     }
 }
 @media (max-width: 1399px) {
-    .bottom_nav_btn{
+    .bottom_nav_btn {
         height: 70px;
+    }
+    .hero_slide_blog{
+        padding-right: 10%;
     }
 }
 @media (max-width: 1199px) {
-    .bottom_nav_btn{
+    .bottom_nav_btn {
         height: 60px;
     }
-    .games_card_content img, .slot__img{
+    .games_card_content img,
+    .slot__img {
         width: 100%;
     }
 }
 @media (max-width: 991px) {
-    .bottom_nav_btn img{
+    .bottom_nav_btn img {
         width: 25px;
     }
-    .games__card{
+    .games__card {
         border-radius: 0;
+    }
+}
+@media (max-width: 575px) {
+    .allgames_img_blog img{
+        width: 44px;
+    }
+    .bottom_nav_btn{
+        height: 50px;
+        padding: 0 10px;
+    }
+    .allgames_box_title{
+        display: none;
+    }
+    .header__warning{
+        height: auto;
+    }
+    .header__warning p {
+        padding-right: 25px;
+    }
+    .desktop__nav .navbar-brand{
+        padding: 0 !important;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .desktop__nav .navbar-brand img{
+        width: 100px;
+        height: 25px;
+    }
+    .nav_mobile_btn{
+        padding: 6px 8px !important;
+    }
+    .games__card{
+        height: 220px;
+    }
+    .games__cards .games_card_content img{
+        max-width: 180px;
+    }
+    .mobile_games_card .games_card_content img{
+        max-width: 320px;
+    }
+    .mobile_games_card .games__card{
+        padding: 15px;
+    }
+    .games__card .hero_slide_btn{
+        height: 32px;
+        width: 140px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .partners{
+        overflow: hidden;
+    }
+    .providers__img{
+        width: auto;
+    }
+    .mobile_page_item{
+        border-right: 1px solid #fff;
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+    .mobile_page_item a{
+        text-decoration: none;
+    }
+    .mobile_page_item:last-child{
+        border: none;   
     }
 }
