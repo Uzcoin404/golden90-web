@@ -62,7 +62,7 @@ a:hover {
 .mobile__nav {
     display: none;
 }
-.offcanvas .nav-item{
+.offcanvas .nav-item {
     margin-bottom: 10px;
 }
 .nav-link {
@@ -85,7 +85,7 @@ a:hover {
     height: 41px;
     max-width: 100px;
 }
-.nav__select option{
+.nav__select option {
     color: #000d0b;
     font-size: 16px;
 }
@@ -188,6 +188,7 @@ a:hover {
     color: #fff;
     text-align: center;
     margin: 0;
+    text-transform: uppercase;
 }
 .section_title_blog {
     display: flex;
@@ -234,8 +235,9 @@ a:hover {
     align-items: center;
     padding: 20px;
 }
-.allgames__cards:nth-child(1) .games__card {
-    background: url("../img/card-bg-1.jpg") no-repeat center / cover;
+.allgames__cards:nth-child(1) .games__card,
+.mobile_games_card .games__card {
+    background: url("../img/card-bg-1.jpg") no-repeat center / cover !important;
 }
 .allgames__cards:nth-child(2) .games__card {
     background: url("../img/card-bg-2.jpg") no-repeat center / cover;
@@ -314,7 +316,7 @@ a {
     .bottom_nav_btn {
         height: 70px;
     }
-    .hero_slide_blog{
+    .hero_slide_blog {
         padding-right: 10%;
     }
 }
@@ -336,69 +338,89 @@ a {
     }
 }
 @media (max-width: 575px) {
-    .allgames_img_blog img{
+    .allgames_img_blog img {
         width: 44px;
     }
-    .bottom_nav_btn{
+    .bottom_nav_btn {
         height: 50px;
         padding: 0 10px;
     }
-    .allgames_box_title{
+    .allgames_box_title {
         display: none;
     }
-    .header__warning{
+    .header__warning {
         height: auto;
     }
     .header__warning p {
         padding-right: 25px;
     }
-    .desktop__nav .navbar-brand{
+    .desktop__nav .navbar-brand {
         padding: 0 !important;
         margin-left: 8px;
         margin-right: 8px;
     }
-    .desktop__nav .navbar-brand img{
+    .desktop__nav .navbar-brand img {
         width: 100px;
         height: 25px;
     }
-    .nav_mobile_btn{
+    .nav_mobile_btn {
         padding: 6px 8px !important;
     }
-    .games__card{
+    .games__card {
         height: 220px;
     }
-    .games__cards .games_card_content img{
+    .games__cards .games_card_content img {
         max-width: 180px;
     }
-    .mobile_games_card .games_card_content img{
+    .mobile_games_card .games_card_content img {
         max-width: 320px;
     }
-    .mobile_games_card .games__card{
+    .mobile_games_card .games__card {
         padding: 15px;
     }
-    .games__card .hero_slide_btn{
+    .games__card .hero_slide_btn {
         height: 32px;
         width: 140px;
         margin-top: 10px;
         font-size: 12px;
     }
-    .partners{
+    .partners {
         overflow: hidden;
     }
-    .providers__img{
+    .providers__img {
         width: auto;
     }
-    .mobile_page_item{
+    .mobile_page_item {
         border-right: 1px solid #fff;
         font-size: 12px;
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 20px;
     }
-    .mobile_page_item a{
+    .mobile_page_item a {
         text-decoration: none;
     }
-    .mobile_page_item:last-child{
-        border: none;   
+    .mobile_page_item:last-child {
+        border: none;
+    }
+    .section_title_blog {
+        justify-content: space-between;
+    }
+    .section__title {
+        font-size: 14px;
+    }
+    .title_blog_btn {
+        background-color: rgba(255, 255, 255, 0.7) !important;
+        color: #000 !important;
+        border-radius: 20px;
+        font-size: 14px;
+        display: flex !important;
+        align-items: center;
+    }
+    .canli_casino_title_icon {
+        width: 26px !important;
+    }
+    .slot_games_title_icon {
+        width: 54px !important;
     }
 }
