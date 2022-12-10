@@ -131,6 +131,7 @@ a:hover {
     background: none;
     width: 44px;
     height: 60px;
+    outline: none !important;
 }
 .splide__arrow svg {
     width: inherit;
@@ -343,7 +344,15 @@ a {
     }
     .bottom_nav_btn {
         height: 50px;
-        padding: 0 10px;
+        padding: 0 8px;
+        font-size: 10px;
+    }
+    .bottom_nav_btn img {
+        width: auto;
+        max-width: 20px;
+    }
+    .bottom__navbar .container-fluid{
+        padding: 0 4px !important;
     }
     .allgames_box_title {
         display: none;
