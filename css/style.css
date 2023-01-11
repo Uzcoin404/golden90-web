@@ -75,17 +75,20 @@ a:hover {
 .nav-link img {
     margin-right: 8px;
 }
-.nav__select {
+.language_btn {
     text-transform: uppercase;
     background-color: transparent;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
     border-color: #fff;
     color: #fff;
     font-size: 11px;
     height: 41px;
-    max-width: 100px;
+    max-width: 90px;
 }
-.nav__select option {
+.language_dropdown .dropdown-menu {
+    min-width: 100px;
+    max-width: 150px;
+}
+.language_dropdown .dropdown-item {
     color: #000d0b;
     font-size: 16px;
 }
@@ -136,6 +139,7 @@ a:hover {
 .splide__arrow svg {
     width: inherit;
     height: inherit;
+    fill: none !important;
 }
 .splide__arrow--prev {
     left: 10%;
@@ -153,6 +157,7 @@ a:hover {
     background-image: url("../img/hero-slide-1.jpg");
     background-position: top left;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .hero_slide_blog {
     padding-right: 15%;
@@ -288,8 +293,8 @@ a:hover {
         url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e")
         center/1em auto no-repeat;
 }
-.header__warning p,
-a {
+.header_warn_link,
+.header__warning p {
     color: #fff !important;
     margin: 0;
 }
@@ -305,6 +310,22 @@ a {
 .nav_mobile_btn img {
     margin-bottom: 8px;
 }
+
+.mobile_page_link {
+    color: #fff;
+}
+.slide_text_shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.7;
+    filter: blur(37px);
+    display: none;
+}
+
 @media (min-width: 1400px) {
     .slot__images {
         width: 14.285714285%;
@@ -315,16 +336,13 @@ a {
 }
 @media (max-width: 1399px) {
     .bottom_nav_btn {
-        height: 70px;
+        height: 60px;
     }
     .hero_slide_blog {
         padding-right: 10%;
     }
 }
 @media (max-width: 1199px) {
-    .bottom_nav_btn {
-        height: 60px;
-    }
     .games_card_content img,
     .slot__img {
         width: 100%;
@@ -337,21 +355,69 @@ a {
     .games__card {
         border-radius: 0;
     }
+    .hero__carousel .splide__slide {
+        height: 560px;
+        min-height: auto;
+    }
+    .hero_slide_blog {
+        padding: 0;
+        justify-content: flex-end;
+    }
+    .hero_slide_btn {
+        display: none;
+    }
+    .hero_slide_blog img {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+    .hero__slide {
+        background-position: center;
+        justify-content: center;
+    }
+    .slide_text_shadow {
+        display: block;
+    }
+    .splide__arrow svg path {
+        stroke-width: 8px;
+    }
+    .splide__arrow svg {
+        height: 40px;
+    }
+    .splide__arrow--prev {
+        left: 20px;
+    }
+    .splide__arrow--next {
+        right: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .hero__carousel .splide__slide {
+        height: 400px;
+    }
 }
 @media (max-width: 575px) {
+    .bottom_nav_item:last-child a:last-child{
+        display: none;
+    }
+    .bottom_nav_item:last-child a:first-child img{
+        max-width: 36px;
+    }
     .allgames_img_blog img {
         width: 44px;
     }
     .bottom_nav_btn {
         height: 50px;
         padding: 0 8px;
-        font-size: 10px;
+        font-size: 8px;
     }
     .bottom_nav_btn img {
         width: auto;
         max-width: 20px;
+        margin-right: 8px;
     }
-    .bottom__navbar .container-fluid{
+    .bottom__navbar .container-fluid {
         padding: 0 4px !important;
     }
     .allgames_box_title {
@@ -395,9 +461,6 @@ a {
     }
     .partners {
         overflow: hidden;
-    }
-    .providers__img {
-        width: auto;
     }
     .mobile_page_item {
         border-right: 1px solid #fff;
